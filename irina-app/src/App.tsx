@@ -4,19 +4,24 @@ import irina from './assets/irina.svg'
 import React from 'react'
 
 class App extends React.Component {
+
+  
  render() {
 
-  //const firstValue: string = "Irina";
-  //const firstValue: number = 23;
-  //const firstValue: number[] = [2,3,4];
-  const firstValue: Array<number> = [2,3,4];
+  const aTuple: [string, number] = ['Hello', 42];
+
+  function Hello() {
+    return <h1>Hello!</h1>
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <img src ={irina} className ="App-logo" alt="logo" />
         <p>
-          The Value {firstValue} is of {typeof firstValue} type!
+          The Value {aTuple[0]} is of {typeof aTuple[0]} type!
+          The Value {aTuple[1]} is of {typeof aTuple[1]} type!
+          <Hello />
         </p>
     </header>
   </div>
