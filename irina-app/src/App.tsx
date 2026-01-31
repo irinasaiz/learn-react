@@ -1,34 +1,15 @@
 
 import './App.css'
-import irina from './assets/irina.svg'
-import React from 'react'
+import Message from './Message';
 
-class App extends React.Component {
-
-  
- render() {
-
-  const aTuple: [string, number] = ['Hello', 42];
-
-  function Hello() {
-    return <h1>Hello!</h1>
-  }
-
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src ={irina} className ="App-logo" alt="logo" />
-        <p>
-          The Value {aTuple[0]} is of {typeof aTuple[0]} type!
-          The Value {aTuple[1]} is of {typeof aTuple[1]} type!
-          <Hello />
-          <Hello />
-        </p>
-    </header>
-  </div>
-    );
-  }
- }
+   <div>
+    <h1>Typescript is cool!</h1>
+    <Message name='Irina' message='This is a cool message'/>
+   </div>
 
+  )
+}
 export default App
 
