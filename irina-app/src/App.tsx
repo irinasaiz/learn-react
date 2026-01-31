@@ -22,6 +22,7 @@ class App extends React.Component {
           The Value {aTuple[0]} is of {typeof aTuple[0]} type!
           The Value {aTuple[1]} is of {typeof aTuple[1]} type!
           <Hello />
+          <Hello />
         </p>
     </header>
   </div>
