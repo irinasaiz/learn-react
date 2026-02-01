@@ -1,11 +1,11 @@
 import React from "react"
 
-type MessageProps = {
+interface UserMessage  {
     name: string;
     message: string;
 }
 
-const Message: React.FC<MessageProps> = ({name, message}) => {
+const Message: React.FC<UserMessage> = ({name, message}) => {
     return (
         <p> {name}, {message}</p>
     )
